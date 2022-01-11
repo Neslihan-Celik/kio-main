@@ -1,0 +1,175 @@
+
+/*menu*/
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: #07457a;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+header a {
+  text-decoration-line: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: rgb(232, 232, 248);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #e2e9f0;
+}
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #355c7d;
+  font-weight: bold;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+#login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #f00a0a;
+}
+
+#signup a {
+  color: #f00a0a;
+}
+
+#login a {
+  color: #498afb;
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+ul li:hover
+{
+  background: #fff;
+  border-radius: 10px;
+}
+ul li
+{
+  transition: 3s;
+  list-style: none;
+  float: right;
+  margin-top: 10px;
+  padding: 10px;
+}
+a
+{
+    user-select: none;
+  text-decoration-line: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #355c7d;
+    display: inline-block;
+  position: relative;
+}
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+img.home_img
+{
+    width: 377px;
+  max-width: 377px;
+  height: 377px;
+  padding: 20px;
+  transition: .5s;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+img.home_img:hover
+{
+  border-radius: 10px;
+}

@@ -1,0 +1,70 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DejaVu Sans Mono, monospace;
+}
+  body
+{
+  margin: 0;
+}
+div.container
+{
+  height: 100vh;
+  width: 100%;
+}
+img.logo
+{
+    user-select: none;
+  width: 100px;
+  hgeight: 70px
+}
+/*text*/
+
+/*Animation header*/
+
+h3.colortext
+{_
+
+  gap: 1rem;
+  text-align: left;
+}
+.example
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
